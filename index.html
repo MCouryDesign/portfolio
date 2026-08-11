@@ -23,6 +23,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css"/>
+<style>
+/* home tile cover images */
+.proj .cover.has-img{background:#0c0c0e}
+.proj .cover.has-img::before{opacity:0}
+.proj .cover.has-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.proj .cover.has-img .badge{z-index:2}
+</style>
 </head>
 <body>
 <div id="glow"></div>
@@ -167,7 +174,7 @@
       <!-- FEATURED: TRUCE -->
       <article class="proj feat reveal">
         <!-- REPLACE cover: drop <img src="truce-cover.jpg" alt="TRUCE Software UI"> inside .cover -->
-        <div class="cover"><span class="badge">Product · UX/UI</span><span class="cn">TRUCE Software</span></div>
+        <div class="cover has-img"><span class="badge">Product · UX/UI</span><img src="assets/home/truce.jpg" alt="TRUCE Software"></div>
         <div class="body">
           <h3>TRUCE Software — Connected Worker Platform</h3>
           <div class="role">Product UX/UI Designer · Web · iOS · Android</div>
@@ -178,7 +185,7 @@
 
       <!-- AI / CLAUDE work -->
       <article class="proj reveal">
-        <div class="cover"><span class="badge">AI · Product</span><span class="cn">AI Design Tooling</span></div>
+        <div class="cover has-img"><span class="badge">AI · Product</span><img src="assets/home/ai-tooling.jpg" alt="AI-built product tooling — michaelcoury.com"></div>
         <div class="body">
           <h3>AI‑Built Product Tooling</h3>
           <div class="role">AI Product Design · Prototyping · Automation</div>
@@ -189,7 +196,7 @@
 
       <!-- Dealer Car Search with animated stats -->
       <article class="proj reveal">
-        <div class="cover"><span class="badge">Web · At scale</span><span class="cn">Dealer Car Search</span></div>
+        <div class="cover has-img"><span class="badge">Web · At scale</span><img src="assets/home/dcs.jpg" alt="Dealer Car Search"></div>
         <div class="body">
           <h3>Dealer Car Search</h3>
           <div class="role">Senior Web Designer &amp; Developer</div>
@@ -205,7 +212,7 @@
 
       <!-- Aerial Golf -->
       <article class="proj reveal">
-        <div class="cover"><span class="badge">Launch · UX/UI</span><span class="cn">Aerial Golf</span></div>
+        <div class="cover has-img"><span class="badge">Launch · UX/UI</span><img src="assets/home/aerial.jpg" alt="Aerial Golf"></div>
         <div class="body">
           <h3>Aerial Golf</h3>
           <div class="role">Senior UX/UI Designer · 2016–2018</div>
@@ -216,7 +223,7 @@
 
       <!-- The Shooting Guy -->
       <article class="proj reveal">
-        <div class="cover"><span class="badge">Course platform</span><span class="cn">The Shooting Guy</span></div>
+        <div class="cover has-img"><span class="badge">Course platform</span><img src="assets/home/tsg.jpg" alt="The Shooting Guy"></div>
         <div class="body">
           <h3>The Shooting Guy</h3>
           <div class="role">UX/UI Designer · 2017–2018</div>
